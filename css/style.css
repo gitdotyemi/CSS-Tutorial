@@ -8,7 +8,7 @@ body {
 .block {
     width: 30vw;
     height: 30vw;
-    background-color: #000;
+    background-color: #333;
     color: #fff;
     padding: 1rem;
 }
@@ -20,7 +20,7 @@ body {
 
 .right {
     float: right;
-    margin-left: 1rem
+    margin-right: 1rem;
 }
 
 .clear {
