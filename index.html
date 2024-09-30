@@ -5,30 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Images</title>
+    <title>CSS Mini-Projeccts: Profile Cards</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- <div class="container">
-        <section class="hero">
-            <figure class="profile-pic-figure">
-                <img src="images/profile-800x800.png" alt="Profile Picture" title="My Profile Picture" width="800" height="800">
-                <figcaption class="offscreen">Jane Doe</figcaption>
-            </figure>
-            <h1 class="h1">
-                <span class="nowrap">Hello 👋</span>
-                <span class="nowrap">I'm Jane</span>
-            </h1>
-        </section>
-    </div> -->
-    <!-- <section class="example">
-        <img src="images/pat1.png" alt="Pattern one" width="200" height="200">
-    </section> -->
+   <header>
+    <h1>Our Staffs</h1>
+    <nav>
+        <a href="#profile1">Joe</a>
+        <a href="#profile2">Matt</a>
+        <a href="#profile3">Jane</a>
+    </nav>
+   </header>
 
-    <section>
-        <p class="clip">Jane</p>
-    </section>
+   <main>
+    <article id="profile1" class="card">
+        <figure>
+            <img src="images/profile1-500x500.png" alt="Joe Coder" width="500" height="500">
+            <figcaption>Joe Coder</figcaption>
+        </figure>
+        <p><q>I code stuff</q></p>
+    </article>
+
+    <article id="profile2" class="card">
+        <figure>
+            <img src="images/profile2-500x500.png" alt="Matt Designer" width="500" height="500">
+            <figcaption>Matt Designer</figcaption>
+        </figure>
+        <p><q>I design stuff</q></p>
+    </article>
+
+    <article id="profile3" class="card">
+        <figure>
+            <img src="images/profile3-500x500.png" alt="Jane Dev Rel" width="500" height="500">
+            <figcaption>Jane <span class="nowrap">Dev Rel</span></figcaption>
+        </figure>
+        <p><q>I teach stuff</q></p>
+    </article>
+   </main>
+
+   <footer>
+    <p>&copy; Acme Co.</p>
+   </footer>
 </body>
 
 </html>
