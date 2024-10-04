@@ -17,11 +17,10 @@ img {
     white-space: nowrap;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
-
+ 
 body {
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
@@ -52,14 +51,18 @@ nav  {
     justify-content: space-evenly;
 }
 
-nav a, nav a:visited  {
+nav a:any-link {
     color: #000;
     text-decoration: none;
 }
 
-nav a:hover, nav a:focus {
+nav :is(a:hover, a:focus) {
     color: hsla(0, 0%, 20%, 0.6);
     text-decoration: underline;
+}
+
+nav a:active {
+    color: red;
 }
 
 main {
@@ -83,10 +86,10 @@ main {
     align-items: center;
 }
 
-/* .card figure {
+.card figure {
     display: flex;
     flex-flow: column nowrap;
-} */
+}
 
 .card img {
     border: 5px double #333;
@@ -100,7 +103,7 @@ main {
     text-align: center;
 }
 
-/* SMALL */
+/* /* SMALL */
 @media screen and (min-width: 576px) {
     main {
         justify-content: center;
@@ -176,5 +179,9 @@ main {
 
     .card {
         width: min(calc(33% -- 0.25rem), 200px);
+    }
+
+    .card figcaption, .card p {
+        font-size: 1.25rem;
     }
 }
