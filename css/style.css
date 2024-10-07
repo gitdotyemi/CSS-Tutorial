@@ -86,6 +86,10 @@ main {
     align-items: center;
 }
 
+.card:target {
+    border: 2px solid rebeccapurple;
+}
+
 .card figure {
     display: flex;
     flex-flow: column nowrap;
@@ -96,11 +100,48 @@ main {
     border-radius: 50%;
 }
 
+.card img:not([alt]) {
+    border: 10px solid red;
+}
+
+.card:nth-child(2) {
+    background-color: papayawhip;
+}
+
 .card figcaption {
     font-weight: bolder;
     font-size: 2rem;
     margin: 1rem;
     text-align: center;
+}
+
+.card figcaption::after {
+    content: "✨";
+    display: block;
+}
+
+.card figcaption::first-line {
+    font-size: 3rem;
+}
+
+.card p {
+    position: relative;
+}
+
+.card p::before {
+    content: open-quote;
+    font-size: 3em;
+    position: absolute;
+    top: -0.25em;
+    left: -0.5em;
+}
+
+.card p::after {
+    content: close-quote;
+    font-size: 3em;
+    position: absolute;
+    top: -0.25em;
+    right: -0.5em;
 }
 
 /* /* SMALL */
